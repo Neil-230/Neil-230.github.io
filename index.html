@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url(D:/Programming/HTML-CSS/Assets/img/project5.jpg);
+        }
+        header {
+            width: 100%;
+            height: 190px;
+            color: black;
+            box-shadow: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+        .details {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 5px;
+            margin: -10;
+            margin-left: 50px;
+            background-color: #33333300;
+            display: inline-flex;
+        }
+
+        nav li {
+            display: inline-block;
+            position: relative;
+            margin-right: 20px;
+            white-space: nowrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000000; 
+            text-shadow: 0 0 10px #caa500;
+            transform: scale(1.1);
+        }
+
+        .Top_Header {
+            backdrop-filter: blur(50px);
+            color: white;
+            padding: 10px 0;
+        }
+
+        .Bottom_Header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .main_content_container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            backdrop-filter: blur(50px);
+            text-align: justify;
+            position: relative;
+            z-index: 1; 
+        }
+        
+
+        .introduction {
+            margin-bottom: 40px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .introduction ul {
+            list-style: none;
+            padding: 0;
+            color: #f2f2f2;
+        }
+
+        .introduction h3 {
+            color: black;
+            margin-top: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .image-container img {
+            object-fit: cover;
+            max-width: auto;
+            border-radius: 0%;
+            max-width: 500px;
+        }
+
+        .button{
+            text-align: center;
+        }
+
+        button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #800080;
+            background: transparent;
+            color: #E6E6FA;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        span{
+            background: #800080;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+
+        button:hover{
+            border: none;   
+        }
+
+        footer {
+            text-align: center;
+            color: black;
+            padding: 10px;
+            backdrop-filter: blur(50px);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="Top_Header">
+        <div class="Bottom_Header">
+            <div class="top-section">
+                <img src="D:/Programming/HTML-CSS/Assets/img/ME.jpg" alt="ME">
+                <div class="details">
+                    <h1>NEIL VINCENT V PENAFLORIDA</h1>
+                    <p>HOME PAGE</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="IT111 Blog Page.html">IT111 Blog Page</a></li>
+                    <li><a href="Flex Page.html">Flex Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main_content_container">
+        <div class="introduction">
+            <ul>
+                <h3>Self Introduction</h3>
+                <p>Hi, welcome to my first website. My name is Neil Vincent Penaflorida, and I am a first-year college student.
+                    I finished my elementary education at Airport Village Elementary School and completed high school at Casisang National High School.
+                    Currently, I am in my first year of college at Bukidnon State University. My hobbies are playing games, practicing coding, and writing websites.
+                    I also like eating, and I have some skills in gaming and a little bit of programming for now..<br><br>
+
+                    My hobbies are playing games like Call of Duty, Blood Strike, etc. I also play offline games. Also, one of my hobbies is watching anime like One Piece, Jujutsu Kaisen, etc.
+                    This hobby of mine is one of my sources of entertainment and a way to escape problems and stress from my subjects in college and elsewhere.<br><br>
+                </P>
+            </ul>
+        </div>
+        <div class="image-container">
+            <img src="D:/Programming/HTML-CSS/Assets/img/My F.jpg" alt="Future Self Image">
+        </div>
+            <div class="button">
+                <button type="button" onclick="window.location.href='https://www.facebook.com/';"><span></span>FACEBOOK</button>
+                <button type="button" onclick="window.location.href='https://www.instagram.com/';"><span></span>INSTAGRAM</button>
+                <button type="button" onclick="window.location.href='https://www.youtube.com/';"><span></span>YOUTUBE</button>
+            </div>
+    </div>
+    <footer>
+        Version 1.0|| Credits: ME
+    </footer>
+</body>
+</html>

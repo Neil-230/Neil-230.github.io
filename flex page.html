@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url(D:/Programming/HTML-CSS/Assets/img/project5.jpg);
+        }
+        header {
+            width: 100%;
+            height: 190px;
+            color: black;
+            box-shadow: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+        .details {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 5px;
+            margin: -10;
+            margin-left: 50px;
+            background-color: #33333300;
+            display: inline-flex;
+        }
+
+        nav li {
+            display: inline-block;
+            position: relative;
+            margin-right: 20px;
+            white-space: nowrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000000;
+            text-shadow: 0 0 10px #caa500;
+            transform: scale(1.1);
+        }
+        .Top_Header {
+            backdrop-filter: blur(50px);
+            color: white;
+            padding: 10px 0;
+        }
+
+        .Bottom_Header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+   
+        .introduction {
+            margin-bottom: 40px auto;
+            margin-left: 150px auto;
+            margin-right: 150px auto;
+            backdrop-filter: blur(50px);
+            text-align: justify;
+            position: relative;
+            z-index: 1;
+        }
+        
+        footer {
+            text-align: center;
+            color: black;
+            padding: 20px;
+            backdrop-filter: blur(50px);
+            margin: 40px auto;
+
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            padding: 30px;
+            position: center;
+            height: auto;
+            
+        }
+      
+        .item {
+            width: 400px;
+            height: 400px;
+            border: 10px solid purple;
+            backdrop-filter: blur(30px);
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="Top_Header">
+        <div class="Bottom_Header">
+            <div class="top-section">
+                <img src="D:/Programming/HTML-CSS/Assets/img/ME.jpg" alt="HHH">
+                <div class="details">
+                    <h1>NEIL VINCENT V PENAFLORIDA</h1>
+                    <p>Flex Page</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="IT111 Blog Page.html">IT111 Blog Page</a></li>
+                    <li><a href="Flex Page.html">Flex Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <div class="introduction">
+            <div class="container">
+                <div class="item">
+                <img src="../Assets/img/anime.jpg" alt="Anime">
+                <h3>Watching Anime</h3>
+                <p>Anime is a great source of entertainment for me. also one of my realiving my stress</p>
+            </div>
+            <div class="item">
+                <img src="../Assets/img/gaming.webp" alt="Gaming">
+                <h3>Playing Games</h3>
+                <p>I enjoy playing video games in my free time. this are one of my way of releving my stress.</p>
+            </div>
+            <div class="item">
+                <img src="../Assets/img/family.jpg" alt="Family">
+                <h3>Family</h3>
+                <p>Spending quality time with my family is priceless, and I am proud of it. 
+                   They are the ones who have supported me throughout my life, from elementary school to college.</p>
+            </div>
+            <div class="item">
+                <img src="../Assets/img/coding.jpg" alt="Coding">
+                <h3>Coding</h3>
+                <p>I love coding and create some website.</p>
+            </div>  
+    </div>
+</body>
+    <footer>
+        Version 1.0|| Credits: Neil Vincent Penaflorida V,    
+    </footer>
+</html>
