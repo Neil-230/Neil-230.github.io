@@ -162,6 +162,169 @@
             padding: 10px;
             backdrop-filter: blur(50px);
         }
+         .container img {
+            width: 400px;
+            height: 200px;
+            max-width: none;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            padding: 30px;
+            position: center;
+            height: auto;
+            
+        }
+      
+        .item {
+            width: 500px;
+            height: 500px;
+            border: 10px solid purple;
+            backdrop-filter: blur(30px);
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 767px) {
+    nav a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .Top_Header {
+        padding: 5px 0;
+    }
+
+    .Bottom_Header {
+        padding: 0 10px;
+    }
+
+    .main_content_container {
+        padding: 0 10px;
+    }
+
+    .introduction {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    button {
+        width: 150px;
+        padding: 10px 0;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    .container img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .item {
+        width: 350px;
+        height: 350px;
+        border: 5px solid purple;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+    nav a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .Top_Header {
+        padding: 10px 0;
+    }
+
+    .Bottom_Header {
+        padding: 0 20px;
+    }
+
+    .main_content_container {
+        padding: 0 20px;
+    }
+
+    .introduction {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    button {
+        width: 200px;
+        padding: 15px 0;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .container img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .item {
+        width: 500px;
+        height: 500px;
+        border: 10px solid purple;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    nav a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .Top_Header {
+        padding: 10px 0;
+    }
+
+    .Bottom_Header {
+        padding: 0 20px;
+    }
+
+    .main_content_container {
+        padding: 0 20px;
+    }
+
+    .introduction {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    button {
+        width: 200px;
+        padding: 15px 0;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .container img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .item {
+        width: 500px;
+        height: 500px;
+        border: 10px solid purple;
+    }
+}
     </style>
 </head>
 
@@ -209,9 +372,15 @@
                     CSS adds style and enhances visual appeal with colors and fonts. Learning HTML felt like mastering the language of the web, while CSS allowed for creative customization.
                     Lesson 6 made web development an enjoyable adventure, turning a blank canvas into a masterpiece. And Currently learning more from my major subjects.
                 </p>
-
             </ul>
         </div>
+          <div class="introduction">
+            <h3>Output</h3>
+            <div class="container">
+                <div class="item">
+                <img src="../Assets/img/cyber.png" alt="cyber">
+                <h3>Case Study About Famous Cyber Crime</h3>
+            </div>
             <div class="button">
                 <button type="button" onclick="window.location.href='https://www.facebook.com/';"><span></span>FACEBOOK</button>
                 <button type="button" onclick="window.location.href='https://www.instagram.com/';"><span></span>INSTAGRAM</button>
